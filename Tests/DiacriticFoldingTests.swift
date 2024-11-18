@@ -349,7 +349,7 @@ struct DiacriticFoldingTests {
     #expect("ẗ".diacriticFolding() == "t")
     #expect("ẘ".diacriticFolding() == "w")
     #expect("ẙ".diacriticFolding() == "y")
-    #expect("ẛ".diacriticFolding() == "ſ")
+    #expect("ẛ".diacriticFolding() == "f")
     #expect("Ạ".diacriticFolding() == "A")
     #expect("ạ".diacriticFolding() == "a")
     #expect("Ả".diacriticFolding() == "A")
@@ -1059,24 +1059,23 @@ struct DiacriticFoldingTests {
     #expect("ẓ".diacriticFolding() == "z")
     #expect("ẕ".diacriticFolding() == "z")
   }
+  
+  @Test func diacriticFoldingOfComplexLatinLetters() async throws {
+    #expect("Ǣ".diacriticFolding() == "Ae")
+    #expect("ǣ".diacriticFolding() == "ae")
+    #expect("Ǯ".diacriticFolding() == "Ezh")
+    #expect("ǯ".diacriticFolding() == "ezh")
+    #expect("Ǽ".diacriticFolding() == "Ae")
+    #expect("ǽ".diacriticFolding() == "ae")
+    #expect("Ǣ".diacriticFolding() == "Ae")
+    #expect("Ǽ".diacriticFolding() == "Ae")
+    #expect("ǣ".diacriticFolding() == "ae")
+    #expect("ǽ".diacriticFolding() == "ae")
+    #expect("Ǯ".diacriticFolding() == "Ezh")
+    #expect("ʆ".diacriticFolding() == "esh")
+    #expect("ƺ".diacriticFolding() == "ezh")
+    #expect("ǯ".diacriticFolding() == "ezh")
+    #expect("ʓ".diacriticFolding() == "ezh")
+    #expect("ɚ".diacriticFolding() == "schwa")
+  }
 }
-
-// MARK: - unhandled
-
-//    #expect("Ǣ".diacriticFolding() == "Æ")
-//    #expect("ǣ".diacriticFolding() == "æ")
-//    #expect("Ǯ".diacriticFolding() == "Ʒ")
-//    #expect("ǯ".diacriticFolding() == "ʒ")
-//    #expect("Ǽ".diacriticFolding() == "Æ")
-//    #expect("ǽ".diacriticFolding() == "æ")
-//    #expect("Ǣ".diacriticFolding() == "Æ")
-//    #expect("Ǽ".diacriticFolding() == "Æ")
-//    #expect("ǣ".diacriticFolding() == "æ")
-//    #expect("ǽ".diacriticFolding() == "æ")
-//    #expect("ẛ".diacriticFolding() == "ſ")
-//    #expect("Ǯ".diacriticFolding() == "Ʒ")
-//    #expect("ɚ".diacriticFolding() == "ə")
-//    #expect("ʆ".diacriticFolding() == "ʃ")
-//    #expect("ƺ".diacriticFolding() == "ʒ")
-//    #expect("ǯ".diacriticFolding() == "ʒ")
-//    #expect("ʓ".diacriticFolding() == "ʒ")
