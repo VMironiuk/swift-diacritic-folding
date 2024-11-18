@@ -227,7 +227,6 @@ struct DiacriticFoldingTests {
     #expect("ȯ".diacriticFolding() == "o")
     #expect("Ȳ".diacriticFolding() == "Y")
     #expect("ȳ".diacriticFolding() == "y")
-    
     #expect("Ḁ".diacriticFolding() == "A")
     #expect("ḁ".diacriticFolding() == "a")
     #expect("Ḃ".diacriticFolding() == "B")
@@ -381,7 +380,6 @@ struct DiacriticFoldingTests {
     #expect("ỷ".diacriticFolding() == "y")
     #expect("Ỹ".diacriticFolding() == "Y")
     #expect("ỹ".diacriticFolding() == "y")
-    
     #expect("Ầ".diacriticFolding() == "A")
     #expect("Ấ".diacriticFolding() == "A")
     #expect("Ẫ".diacriticFolding() == "A")
@@ -496,7 +494,6 @@ struct DiacriticFoldingTests {
     #expect("ữ".diacriticFolding() == "u")
     #expect("ử".diacriticFolding() == "u")
     #expect("ự".diacriticFolding() == "u")
-    
     #expect("À".diacriticFolding() == "A")
     #expect("Á".diacriticFolding() == "A")
     #expect("Â".diacriticFolding() == "A")
@@ -847,6 +844,7 @@ struct DiacriticFoldingTests {
     #expect("ệ".diacriticFolding() == "e")
     #expect("ƒ".diacriticFolding() == "f")
     #expect("ḟ".diacriticFolding() == "f")
+    #expect("ẛ".diacriticFolding() == "f")
     #expect("ĝ".diacriticFolding() == "g")
     #expect("ğ".diacriticFolding() == "g")
     #expect("ġ".diacriticFolding() == "g")

@@ -44,6 +44,7 @@ public extension String {
       .replacingOccurrences(of: "ɖ", with: "d")
       .replacingOccurrences(of: "ɗ", with: "d")
       .replacingOccurrences(of: "ƒ", with: "f")
+      .replacingOccurrences(of: "ẛ", with: "f")
       .replacingOccurrences(of: "ǥ", with: "g")
       .replacingOccurrences(of: "ɠ", with: "g")
       .replacingOccurrences(of: "ħ", with: "h")
